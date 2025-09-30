@@ -3,13 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/add.css">
 </head>
 <body>
-    <div class="container">
-        <form action="" method="post">
-            z
-        </form>
-    </div>
+
+  <div class="form-container">
+    <h2>Form Film</h2>
+
+    <form>
+      <!-- Bagian Informasi Film -->
+      <div class="form-group">
+        <h3>Informasi Film</h3>
+        <div class="form-row">
+          <div class="field">
+            <label for="judul">Judul Film</label>
+            <input type="text" id="judul" name="judul">
+          </div>
+          <div class="field">
+            <label for="genre">Genre</label>
+            <input type="text" id="genre" name="genre">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="tahun">Tahun Produksi</label>
+            <input type="number" id="tahun" name="tahun">
+          </div>
+          <div class="field">
+            <label for="durasi">Durasi (menit)</label>
+            <input type="number" id="durasi" name="durasi">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field" style="flex: 1;">
+            <label for="sinopsis">Sinopsis</label>
+            <textarea id="sinopsis" name="sinopsis"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bagian Aktor -->
+      <div class="form-group">
+        <h3>Aktor</h3>
+        <div class="form-row">
+          <div class="field">
+            <label for="aktor1">Aktor 1</label>
+            <input type="text" id="aktor1" name="aktor1">
+          </div>
+          <div class="field">
+            <label for="aktor2">Aktor 2</label>
+            <input type="text" id="aktor2" name="aktor2">
+          </div>
+          <div class="field">
+            <label for="aktor3">Aktor 3</label>
+            <input type="text" id="aktor3" name="aktor3">
+          </div>
+        </div>
+      </div>
+
+      <!-- Bagian Rating -->
+      <div class="form-group">
+        <h3>Rating</h3>
+        <div class="rating">
+          ★ ★ ★ ★ ★
+        </div>
+      </div>
+
+      <!-- Tombol -->
+      <div class="form-actions">
+        <button type="button" class="btn cancel"><a href="index.html">Batal</a></button>
+        <button type="submit" class="btn update">Tambahkan</button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
